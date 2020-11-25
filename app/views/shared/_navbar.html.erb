@@ -1,6 +1,8 @@
 <div class="navbar">
   <div class="nav-title">
-    <h2>ARTISTICA</h2>
+    <%= link_to root_path do %>
+      <h2>ARTISTICA</h2>
+    <% end %>
   </div>
   <div class="nav-btns">
     <%= link_to 'Galerie', gallery_path, class: "my-btn cta-btn white-cta" %>

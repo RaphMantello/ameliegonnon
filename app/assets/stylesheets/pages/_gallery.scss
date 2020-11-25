@@ -4,16 +4,9 @@
   width: 100vw;
 }
 
-.top-grid {
-  position: fixed;
-  top: 0;
-}
-
-.bottom-grid {
-}
-
-.side-bar {
+.gallery .side-bar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: var(--nav-height);
@@ -24,11 +17,11 @@
   color: white;
 
   h3{
+    color: white;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
   }
 }
 
 .gallery-content {
-
 }
