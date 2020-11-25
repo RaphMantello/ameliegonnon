@@ -1,6 +1,9 @@
+require "open-uri"
+
 puts 'launching seed...'
 
 puts 'cleaning database:'
+Artwork.destroy_all
 Exposition.destroy_all
 puts 'database clean'
 
@@ -17,19 +20,19 @@ puts 'creation of artworks:'
 aw1 = Artwork.new(name: "Tourné•e•s vers l'avenir", description: description)
 aw1.exposition = repereExpo
 aw1.save!
-aw1 = Artwork.new(name: "Identité multiple", description: description)
-aw1.exposition = repereExpo
-aw1.save!
-aw1 = Artwork.new(name: "Mélancolie", description: description)
-aw1.exposition = repereExpo
-aw1.save!
-aw1 = Artwork.new(name: "D'angoisse est ma crise", description: description)
-aw1.exposition = contrasteExpo
-aw1.save!
-aw1 = Artwork.new(name: "Harmonie", description: description)
-aw1.exposition = contrasteExpo
-aw1.save!
-aw1 = Artwork.new(name: "Évolution, altération", description: description)
-aw1.exposition = contrasteExpo
-aw1.save!
+aw2 = Artwork.new(name: "Identité multiple", description: description)
+aw2.exposition = repereExpo
+aw2.save!
+aw3 = Artwork.new(name: "Mélancolie", description: description)
+aw3.exposition = repereExpo
+aw3.save!
+aw4 = Artwork.new(name: "D'angoisse est ma crise", description: description)
+aw4.exposition = contrasteExpo
+aw4.save!
+aw5 = Artwork.new(name: "Harmonie", description: description)
+aw5.exposition = contrasteExpo
+aw5.save!
+aw6 = Artwork.new(name: "Évolution, altération", description: description)
+aw6.exposition = contrasteExpo
+aw6.save!
 puts 'artworks created!'
