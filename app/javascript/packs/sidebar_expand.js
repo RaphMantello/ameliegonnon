@@ -1,10 +1,18 @@
-const sidebar = document.querySelector(".side-bar");
-const htmlContent = `<div class="expo-titles">
-                      <% @expos.each do |expo| %>
-                        <a href="" data-remote="true"><%= expo.name %></a>
-                      <% end %>
-                    </div>`;
+const currentExpoTitle = document.querySelector(".current-expo-title");
+const currentExpoTitleContent = document.querySelector("#expo-title-content");
+const expoTitlesList = document.querySelector(".expo-titles");
+const expoTitles = document.querySelectorAll(".expo-title");
 
-sidebar.addEventListener("click", (event) => {
-  sidebar.innerHTML = htmlContent
+currentExpoTitle.addEventListener("click", (event) => {
+  currentExpoTitle.style.display = "none";
+  expoTitlesList.style.display = "flex";
+});
+
+expoTitles.forEach((title) => {
+  title.addEventListener("click", (event) => {
+    const newExpoTitle = event.target.innerHTML;
+    currentExpoTitleContent.innerHTML = newExpoTitle;
+    expoTitlesList.style.display = "none";
+    currentExpoTitle.style.display = "";
+  });
 });

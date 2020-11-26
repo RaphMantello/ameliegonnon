@@ -1,13 +1,15 @@
 <div class="gallery">
   <div class="side-bar">
-    <div class="arrow-down"></div>
-    <%= link_to gallery_path, remote: true do %>
-      <h3><%= @expo.name %></h3>
-    <% end %>
-    <div class="arrow-down"></div>
+    <div class="current-expo-title">
+      <div class="arrow-down"></div>
+      <%= link_to gallery_path, remote: true do %>
+        <h3 id="expo-title-content"><%= @expo.name %></h3>
+      <% end %>
+      <div class="arrow-down"></div>
+    </div>
     <div class="expo-titles">
       <% @expos.each do |expo| %>
-        <a href="" data-remote="true"><%= expo.name %></a>
+        <a href="" data-remote="true" class="expo-title"><%= expo.name %></a>
       <% end %>
     </div>
   </div>
@@ -24,4 +26,4 @@
   </div>
 </div>
 
-
+<%= javascript_pack_tag 'sidebar_expand' %>
