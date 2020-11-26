@@ -1,4 +1,4 @@
-const titles = document.querySelectorAll(".side-bar-title");
+const titles = document.querySelectorAll(".side-bar a");
 
 titles.forEach((title) => {
   title.addEventListener("click", (event) => {

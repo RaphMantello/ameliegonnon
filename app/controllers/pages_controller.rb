@@ -8,5 +8,7 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    @expos = Exposition.all
+    @expo = @expos.last
   end
 end

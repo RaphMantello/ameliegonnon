@@ -1,22 +1,25 @@
 <div class="gallery">
-  <div class="gallery-grid top-grid">
-    <div class="side-bar">
-      <div class="arrow-down"></div>
-      <%= link_to gallery_path do %>
-        <h3>Titre d'expo</h3>
+  <div class="side-bar">
+    <div class="arrow-down"></div>
+    <%= link_to gallery_path, remote: true do %>
+      <h3><%= @expo.name %></h3>
+    <% end %>
+    <div class="arrow-down"></div>
+    <div class="expo-titles">
+      <% @expos.each do |expo| %>
+        <a href="" data-remote="true"><%= expo.name %></a>
       <% end %>
-      <div class="arrow-down"></div>
     </div>
-    <div class="empty-div"></div>
   </div>
-  <div class="gallery-grid bottom-grid">
-    <div class="empty-div"></div>
-    <div class="gallery-content">
-      <div class="container">
-        <div class="title">
-          <h2>gallery</h2>
-        </div>
+  <div class="gallery-content">
+    <div class="under-nav"></div>
+    <div class="container">
+      <div class="title">
+        <h2>gallery</h2>
       </div>
+      <% @expo.artworks.each do |aw| %>
+        <h3><%= aw.name %></h3>
+      <% end %>
     </div>
   </div>
 </div>

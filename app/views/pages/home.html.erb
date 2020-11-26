@@ -1,24 +1,33 @@
 <div class="home">
-  <div class="home-grid top-grid">
-    <div class="side-bar">
-      <ul>
-        <li><%= link_to "Présentation", "#", class: "side-bar-title active", remote: true %></li>
-        <li><%= link_to "Presse", "#", class: "side-bar-title", remote: true %></li>
-        <li><%= link_to "En cours", "#", class: "side-bar-title", remote: true %></li>
-        <li><%= link_to "Événements", "#", class: "side-bar-title", remote: true %></li>
-        <li><%= link_to "Blog", "#", class: "side-bar-title", remote: true %></li>
-      </ul>
+  <div class="home-content">
+    <div class="under-nav"></div>
+    <div class="title">
+      <section id="video-banner">
+        <h3>This is video banner</h3>
+      </section>
+      <section id="press-banner">
+        <h3>This is press banner</h3>
+      </section>
+      <section id="wip-banner">
+        <h3>This is WIP banner</h3>
+      </section>
+      <section id="event-banner">
+        <h3>This is event banner</h3>
+      </section>
+      <section id="blog-banner">
+        <h3>This is blog banner</h3>
+      </section>
     </div>
-    <div class="empty-div"></div>
   </div>
-  <div class="home-grid bottom-grid">
-    <div class="empty-div"></div>
-    <div class="home-content">
-      <div class="title">
-        <h2>This home page</h2>
-      </div>
-    </div>
+  <div class="side-bar">
+    <ul>
+      <li><a href="#video-banner" data-remote="true">Présentation</a></li>
+      <li><a href="#press-banner" data-remote="true">Presse</a></li>
+      <li><a href="#wip-banner" data-remote="true">En cours</a></li>
+      <li><a href="#event-banner" data-remote="true">Événements</a></li>
+      <li><a href="#blog-banner" data-remote="true">Blog</a></li>
+    </ul>
   </div>
 </div>
 
-<%= javascript_pack_tag 'sidebar_active' %>
+<%= javascript_pack_tag 'scroll_spy' %>
