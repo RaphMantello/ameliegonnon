@@ -19,11 +19,17 @@
       <div class="title">
         <h2>gallery</h2>
       </div>
-      <% @expo.artworks.each do |aw| %>
-        <h3><%= aw.name %></h3>
+      <% @expos.each do |expo| %>
+        <div id="<%= expo.name %>" class="expo-content">
+          <h3><%= expo.name %></h3>
+          <% expo.artworks.each do |aw| %>
+            <h4><%= aw.name %></h4>
+          <% end %>
+        </div>
       <% end %>
     </div>
   </div>
 </div>
 
+<%= javascript_pack_tag 'current_expo_show' %>
 <%= javascript_pack_tag 'sidebar_expand' %>
