@@ -24,6 +24,9 @@
           <h3><%= expo.name %></h3>
           <% expo.artworks.each do |aw| %>
             <h4><%= aw.name %></h4>
+            <% if aw.photo.attached? %>
+              <%= cl_image_tag aw.photo.key, height: 300, width: 400, crop: :fill %>
+            <% end %>
           <% end %>
         </div>
       <% end %>
