@@ -1,14 +1,16 @@
 <div class="container">
+  <% if @artwork.photo.attached? %>
+    <%= cl_image_tag @artwork.photo.key, crop: :fill %>
+  <% end %>
   <div class="title-and-links">
     <div class="left"></div>
     <div class="center">
       <h2><%= @artwork.name %></h2>
-      <% if @artwork.photo.attached? %>
-        <%= cl_image_tag @artwork.photo.key, height: 300, width: 400, crop: :fill %>
-      <% end %>
     </div>
     <div class="right links">
-      <%= link_to 'edit', edit_artwork_path(@artwork) %>
+      <% if policy(@artwork).update? %>
+        <%= link_to 'edit', edit_artwork_path(@artwork) %>
+      <% end %>
     </div>
   </div>
 </div>

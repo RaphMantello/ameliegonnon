@@ -5,7 +5,11 @@
     <% end %>
   </div>
   <div class="nav-btns">
-    <%= link_to 'Galerie', gallery_path, class: "my-btn cta-btn white-cta" %>
+    <% if ['gallery'].exclude?(action_name) %>
+      <%= link_to 'Galerie', gallery_path, id: "gallery-btn", class: "my-btn cta-btn white-cta" %>
+    <% else %>
+      <%= link_to 'Galerie', '', class: "my-btn cta-btn white-cta" %>
+    <% end %>
     <%= link_to 'Accueil', home_path, class: "my-btn white-transp-btn" %>
   </div>
 </div>

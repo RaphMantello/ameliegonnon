@@ -1,0 +1,6 @@
+<%= link_to artwork_path(aw) do %>
+  <h4><%= aw.name %></h4>
+<% end %>
+<% if aw.photo.attached? %>
+  <%= cl_image_tag aw.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>

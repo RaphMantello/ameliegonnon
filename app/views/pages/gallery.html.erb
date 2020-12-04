@@ -19,16 +19,16 @@
       <div class="title">
         <h2>gallery</h2>
       </div>
+      <div id="last-expo">
+        <% @expo.artworks.each do |aw| %>
+          <%= render 'artworks/artwork_banner', aw: aw %>
+        <% end %>
+      </div>
       <% @expos.each do |expo| %>
         <div id="<%= expo.name %>" class="expo-content">
           <h3><%= expo.name %></h3>
           <% expo.artworks.each do |aw| %>
-            <%= link_to artwork_path(aw) do %>
-              <h4><%= aw.name %></h4>
-            <% end %>
-            <% if aw.photo.attached? %>
-              <%= cl_image_tag aw.photo.key, height: 300, width: 400, crop: :fill %>
-            <% end %>
+            <%= render 'artworks/artwork_banner', aw: aw %>
           <% end %>
         </div>
       <% end %>
@@ -36,5 +36,5 @@
   </div>
 </div>
 
-<%= javascript_pack_tag 'current_expo_show' %>
 <%= javascript_pack_tag 'sidebar_expand' %>
+<%= javascript_pack_tag 'current_expo_show' %>

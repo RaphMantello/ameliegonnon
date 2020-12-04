@@ -19,6 +19,10 @@ expoTitles.forEach((title) => {
     expoTitlesList.style.display = "none";
     currentExpoTitle.style.display = "";
 
+    //lastExpo display none
+    const lastExpo = document.querySelector('#last-expo');
+    lastExpo.style.display = "none";
+
     //expoContent change
     const newExpoContent = document.querySelector(`#${newExpoTitle}`);
     currentExpoContent.style.display = "none";
