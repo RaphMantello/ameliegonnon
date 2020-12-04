@@ -44,12 +44,13 @@ body {
     font-size: clamp(0.65rem, 1vw, 1rem);
   }
   a {
+    color: inherit;
     font-size: clamp(0.65rem, 1vw, 1rem);
     font-family: 'Barlow Condensed', sans-serif;
 
     &:hover {
-      text-decoration: underline solid white;
-
+      text-decoration: underline solid black;
+      color: inherit;
     }
   }
   label, input {

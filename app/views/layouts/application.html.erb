@@ -15,6 +15,10 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
 
+    <% if under_nav? %>
+      <div class="under-nav"></div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

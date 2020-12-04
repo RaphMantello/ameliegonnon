@@ -2,12 +2,25 @@
   text-align: center;
 }
 
-.top-grid {
-  position: fixed;
-  top: 0;
-}
+.title-and-links {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
 
-.bottom-grid {
+  .left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 html {
