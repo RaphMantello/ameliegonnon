@@ -16,17 +16,21 @@
   <div class="gallery-content">
     <div class="under-nav"></div>
     <div class="container">
-      <div class="title">
-        <h2>gallery</h2>
-      </div>
       <div id="last-expo">
+        <div class="expo-head">
+          <h2><%= @expo.name %></h2>
+          <p><%= @expo.description %></p>
+        </div>
         <% @expo.artworks.each do |aw| %>
           <%= render 'artworks/artwork_banner', aw: aw %>
         <% end %>
       </div>
       <% @expos.each do |expo| %>
         <div id="<%= expo.name %>" class="expo-content">
-          <h3><%= expo.name %></h3>
+          <div class="expo-head">
+            <h2><%= expo.name %></h2>
+            <p><%= expo.description %></p>
+          </div>
           <% expo.artworks.each do |aw| %>
             <%= render 'artworks/artwork_banner', aw: aw %>
           <% end %>

@@ -28,6 +28,15 @@
   }
 }
 
+.expo-head {
+  display: flex;
+  padding: 3rem 0;
+
+  h2 {
+    padding-right: 1rem;
+  }
+}
+
 .expo-content {
   display: none;
 }
