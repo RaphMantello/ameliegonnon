@@ -1,0 +1,18 @@
+---
+fr:
+  activerecord:
+    attributes:
+      artwork:
+        name: Nom
+      exposition:
+        name: Nom
+    models:
+      artwork: Oeuvre
+      exposition: Exposition
+  pages:
+    home:
+      blog_banner_title: Cette bannière contient le blog
+      event_banner_title: Cette bannière contient les événements
+      press_banner_title: Cette bannière contient les articles de presse
+      video_banner_title: Cette bannière contient une vidéo
+      wip_banner_title: Cette bannière contient les travaux en cours
