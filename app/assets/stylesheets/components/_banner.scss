@@ -1,5 +1,9 @@
 #video-banner {
-  height: 125vh;
+  height: 65vh;
+
+  video {
+    object-fit: cover;
+  }
 }
 
 #press-banner {
