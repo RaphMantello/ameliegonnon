@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def landing
+    @expos = Exposition.all
   end
 
   def gallery

@@ -1,0 +1,28 @@
+<div id="landingPage">
+  <div class="under-nav"></div>
+  <div id="landingPageCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="landing-page-carousel-item active">
+        <div class="carousel-left-side">
+          <h1><%= @expos.first.name %></h1>
+          <div class="carousel-left-side-photo">
+            <%= cl_image_tag @expos.first.photos[0].key %>
+          </div>
+        </div>
+        <div class="carousel-right-side">
+          <h2><%= @expos.first.name %></h2>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
