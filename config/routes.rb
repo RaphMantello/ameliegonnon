@@ -1,12 +1,4 @@
 Rails.application.routes.draw do
-  namespace :admin do
-    resources :users
-    resources :expositions
-    resources :artworks
-
-    root to: "users#index"
-  end
-
   devise_for :users
 
   scope '(:locale)', locale: /fr/ do
@@ -17,6 +9,6 @@ Rails.application.routes.draw do
     resources :expositions do
       resources :artworks, only: [:new, :create]
     end
-    resources :artworks
+    resources :artworks, except: [:new, :create]
   end
 end

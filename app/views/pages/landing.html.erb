@@ -1,37 +1,11 @@
-<div id="landingPage">
-  <div id="landingPageCarousel" class="carousel slide" data-ride="carousel">
+<div id="landing-page">
+  <div id="landing-page-carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="under-nav"></div>
-      <div class="landing-page-carousel-item active">
-        <div class="carousel-left-side">
-          <div class="carousel-left-side-photo-title">
-            <div class="carousel-left-side-photo">
-              <%= cl_image_tag @expos.first.photos[0].key %>
-            </div>
-            <div class="carousel-left-side-title">
-              <h1><%= @expos.first.name %></h1>
-            </div>
-          </div>
-          <div class="carousel-left-side-description">
-            <p><%= @expos.first.description %></p>
-          </div>
-        </div>
-        <div class="carousel-right-side">
-          <div class="carousel-right-side-photos">
-            <div id="carousel-right-side-photo-1" class="carousel-right-side-photo">
-              <%= cl_image_tag @expos.first.photos[1].key %>
-            </div>
-            <div id="w-h-line-1" class="w-h-line"></div>
-            <div id="carousel-right-side-photo-2" class="carousel-right-side-photo">
-              <%= cl_image_tag @expos.first.photos[2].key %>
-            </div>
-            <div id="w-h-line-2" class="w-h-line"></div>
-          </div>
-        </div>
-      </div>
+        <%= render 'expositions/landing_page_carousel_expo' %>
       <div class="carousel-mid-section">
         <div class="w-v-line up-v-line"></div>
-        <%= link_to '#' do  %>
+        <%= link_to exposition_path(@expos.first) do  %>
           <h4><%= t('.visit_gallery_btn') %></h4>
         <% end %>
         <div class="w-v-line btm-v-line"></div>
