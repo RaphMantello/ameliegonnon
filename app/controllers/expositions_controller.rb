@@ -2,6 +2,7 @@ class ExpositionsController < ApplicationController
   before_action :set_expo, only: [:show]
 
   def show
+    authorize @expo
   end
 
   private
