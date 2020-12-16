@@ -4,14 +4,28 @@
     <div class="carousel-inner">
       <div class="landing-page-carousel-item active">
         <div class="carousel-left-side">
-          <h1><%= @expos.first.name %></h1>
-          <div class="carousel-left-side-photo">
-            <%= cl_image_tag @expos.first.photos[0].key %>
+          <div class="carousel-left-side-photo-title">
+            <div class="carousel-left-side-photo">
+              <%= cl_image_tag @expos.first.photos[0].key %>
+            </div>
+            <div class="carousel-left-side-title">
+              <h1><%= @expos.first.name %></h1>
+            </div>
+          </div>
+          <div class="carousel-left-side-description">
+            <p><%= @expos.first.description %></p>
           </div>
         </div>
         <div class="carousel-right-side">
           <h2><%= @expos.first.name %></h2>
         </div>
+      </div>
+      <div class="carousel-mid-section">
+        <div class="w-v-line up-v-line"></div>
+        <%= link_to '#' do  %>
+          <h4><%= t('.visit_gallery_btn') %></h4>
+        <% end %>
+        <div class="w-v-line btm-v-line"></div>
       </div>
     </div>
     <div class="carousel-controls">

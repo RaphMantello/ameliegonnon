@@ -7,3 +7,5 @@ en:
       press_banner_title: This is the press banner
       video_banner_title: This is the video banner
       wip_banner_title: This is the WIP banner
+    landing:
+      visit_gallery_btn: Visit gallery
