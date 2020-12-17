@@ -22,9 +22,10 @@
 
   img {
     position: relative;
-    zoom: 110%;
-    top: -35px;
-    left: -50px;
+    zoom: 140%;
+    top: -30px;
+    left: -35px;
+    height: 50vh;
     mix-blend-mode: hard-light;
   }
 }
@@ -54,6 +55,7 @@
 
   p {
     margin: 0;
+    font-size: x-small;
   }
 }
 
@@ -77,8 +79,9 @@
   img {
     position: relative;
     zoom: 120%;
-    top: -40px;
+    top: -5px;
     left: -50%;
+    height: 55vh;
     mix-blend-mode: hard-light;
   }
 }

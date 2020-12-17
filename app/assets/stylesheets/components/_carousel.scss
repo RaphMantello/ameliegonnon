@@ -1,0 +1,47 @@
+#expoShowCarousel {
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.carousel-caption-container {
+  position: relative;
+  bottom: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.carousel-caption {
+  left: unset;
+  right: 50%;
+  bottom: 10%;
+  width: fit-content;
+
+  .carousel-caption-content {
+    position: relative;
+    right: -50%;
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(25px);
+  }
+
+  a:hover {
+    text-decoration: underline white 1px solid;
+  }
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: unset;
+  height: 10vh;
+  backdrop-filter: blur(25px);
+}
