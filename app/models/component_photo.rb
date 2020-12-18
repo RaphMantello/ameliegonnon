@@ -1,0 +1,2 @@
+class ComponentPhoto < ApplicationRecord
+end
