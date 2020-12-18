@@ -18,3 +18,6 @@ fr:
       wip_banner_title: Cette bannière contient les travaux en cours
     landing:
       visit_gallery_btn: Visiter la galerie
+  buttons:
+    back: Retour
+    edit: Modifier

@@ -9,3 +9,7 @@ en:
       wip_banner_title: This is the WIP banner
     landing:
       visit_gallery_btn: Visit gallery
+  buttons:
+    back: Back
+    edit: Edit
+

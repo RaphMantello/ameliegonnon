@@ -1,7 +1,10 @@
 <div class="container">
-  <% if @artwork.photo.attached? %>
-    <%= cl_image_tag @artwork.photo.key, crop: :fill %>
-  <% end %>
+  <div class="under-nav"></div>
+  <div class="aw-photo-banner">
+    <% if @artwork.photo.attached? %>
+      <%= cl_image_tag @artwork.photo.key %>
+    <% end %>
+  </div>
   <div class="title-and-links">
     <div class="left"></div>
     <div class="center">
@@ -9,8 +12,16 @@
     </div>
     <div class="right links">
       <% if policy(@artwork).update? %>
-        <%= link_to 'edit', edit_artwork_path(@artwork) %>
+        <%= link_to t('buttons.edit'), edit_artwork_path(@artwork) %>
       <% end %>
+    </div>
+  </div>
+  <div class="aw-show-description">
+    <p><%= @artwork.description %></p>
+  </div>
+  <div id="awShowBackBtnWapper">
+    <div id="awShowBackBtn">
+      <%= link_to t('buttons.back'), :back %>
     </div>
   </div>
 </div>
