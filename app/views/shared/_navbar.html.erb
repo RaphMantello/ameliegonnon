@@ -5,12 +5,9 @@
     <% end %>
   </div>
   <div class="nav-btns">
-    <% if ['gallery'].exclude?(action_name) %>
-      <%= link_to 'Galerie', gallery_path, id: "gallery-btn", class: "my-btn cta-btn white-cta" %>
-    <% else %>
-      <%= link_to 'Galerie', '', class: "my-btn cta-btn white-cta" %>
-    <% end %>
-    <%= link_to 'Accueil', home_path, class: "my-btn white-transp-btn" %>
+    <%= link_to t('buttons.expositions'), root_path, class: "my-btn cta-btn white-cta" %>
+    <%= link_to t('buttons.home'), home_path, class: "my-btn white-transp-btn" %>
+    <%= link_to t('buttons.gallery'), gallery_path, class: "my-btn white-transp-btn" %>
   </div>
 </div>
 

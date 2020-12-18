@@ -17,7 +17,11 @@ fr:
       video_banner_title: Cette bannière contient une vidéo
       wip_banner_title: Cette bannière contient les travaux en cours
     landing:
-      visit_gallery_btn: Visiter la galerie
+      visit_gallery_btn: Voir l'exposition
   buttons:
+    expositions: Expositions
+    home: Accueil
+    gallery: Galerie
     back: Retour
     edit: Modifier
+    see_details: Voir l'oeuvre

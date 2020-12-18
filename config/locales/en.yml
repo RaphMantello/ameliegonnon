@@ -8,8 +8,12 @@ en:
       video_banner_title: This is the video banner
       wip_banner_title: This is the WIP banner
     landing:
-      visit_gallery_btn: Visit gallery
+      visit_gallery_btn: Check the exposition
   buttons:
+    expositions: Expositions
+    home: home
+    gallery: Gallery
     back: Back
     edit: Edit
+    see_details: Check the artwork
 
