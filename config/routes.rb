@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :expositions do
       resources :artworks, only: [:new, :create]
     end
-    resources :artworks, except: [:new, :create]
+    resources :artworks, except: [:new, :create] do
+    end
   end
 end

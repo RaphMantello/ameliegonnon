@@ -1,4 +1,4 @@
 class ComponentPhoto < ApplicationRecord
-  belongs_to :artwork
+  has_many :artworks
   has_many_attached :photos
 end

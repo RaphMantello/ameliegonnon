@@ -1,5 +1,5 @@
 class Artwork < ApplicationRecord
   belongs_to :exposition
-  has_many :component_photos
+  belongs_to :component_photo
   has_one_attached :photo
 end
