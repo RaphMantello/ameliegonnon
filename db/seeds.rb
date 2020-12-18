@@ -3,6 +3,7 @@ require "open-uri"
 puts 'launching seed...'
 
 puts 'cleaning database:'
+ComponentPhoto.destroy_all
 Artwork.destroy_all
 Exposition.destroy_all
 puts 'database clean'
@@ -21,14 +22,14 @@ contrasteExpo.save!
 puts 'expositions created!'
 
 puts 'creation of artworks:'
-aw = Artwork.new(name: "identité_multiple", description: description)
+aw1 = Artwork.new(name: "identité_multiple", description: description)
 file = URI.open('https://res.cloudinary.com/dbgvvj1l3/image/upload/v1608064602/Art_Gallery_Mockup_Oeuvres1-1_pcvkmr.jpg')
-aw.photo.attach(io: file, filename:"identité_multiple", content_type: 'image/jpg')
-aw.exposition = contrasteExpo
-aw.save!
-aw = Artwork.new(name: "tournées_vers_l_avenir", description: description)
+aw1.photo.attach(io: file, filename: "identité_multiple", content_type: 'image/jpg')
+aw1.exposition = contrasteExpo
+aw1.save!
+aw2 = Artwork.new(name: "tournées_vers_l_avenir", description: description)
 file = URI.open('https://res.cloudinary.com/dbgvvj1l3/image/upload/v1608064601/Art_Gallery_Mockup_Oeuvres2_1-_ma3gfx.jpg')
-aw.photo.attach(io: file, filename:"tournées_vers_l_avenir", content_type: 'image/jpg')
-aw.exposition = contrasteExpo
-aw.save!
+aw2.photo.attach(io: file, filename: "tournées_vers_l_avenir", content_type: 'image/jpg')
+aw2.exposition = contrasteExpo
+aw2.save!
 puts 'artworks created!'
