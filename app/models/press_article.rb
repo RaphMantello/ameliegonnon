@@ -1,0 +1,2 @@
+class PressArticle < ApplicationRecord
+end
