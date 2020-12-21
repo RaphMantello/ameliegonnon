@@ -1,4 +1,4 @@
 class PressArticle < ApplicationRecord
-  validates :name, presence: true, uniqueness: true
-  validates :description, prensence: true
+  validates :title, presence: true, uniqueness: true
+  validates :content, presence: true
 end
