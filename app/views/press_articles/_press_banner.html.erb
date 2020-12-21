@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="title">
+    <h2><%= t('.press_banner_title') %></h2>
+  </div>
+  <div class="article-cards">
+    <% @articles.each do |article| %>
+      <%= link_to article.article_url do %>
+        <div class="article-card">
+          <div class="ac-title">
+            <p><strong><%= article.title %></strong></p>
+          </div>
+          <div class="ac-content">
+            <p><%= article.content %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -12,8 +12,8 @@
           <p><%= t('.project_description_html') %></p>
         </div>
       </section>
-      <section id="press-banner">
-        <h2><%= t('.press_banner_title') %></h2>
+      <section id="press-banner" class="banner">
+        <%= render 'press_articles/press_banner', articles: @articles %>
       </section>
       <section id="wip-banner">
         <h2><%= t('.wip_banner_title') %></h2>
