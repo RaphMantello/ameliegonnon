@@ -1,0 +1,15 @@
+.comp_photos-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  justify-content: space-evenly;
+  margin: 2rem 0 3rem;
+  padding: 2rem 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+  }
+}

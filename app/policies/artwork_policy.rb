@@ -4,7 +4,7 @@ class ArtworkPolicy < ApplicationPolicy
   end
 
   def update?
-    user.admin == true
+    user.present? && user.admin == true
   end
 
   class Scope < Scope

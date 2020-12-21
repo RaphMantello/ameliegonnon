@@ -1,19 +1,35 @@
 ---
 en:
+  activerecord:
+    attributes:
+      artwork:
+        name: Name
+      exposition:
+        name: Name
+    models:
+      artwork: Artwork
+      exposition: Exposition
+  buttons:
+    back: Back
+    edit: Edit
+    expositions: Expositions
+    gallery: Gallery
+    home: home
+    see_details: Check the artwork
+  errors:
+    messages:
+      not_saved: Not saved
   pages:
     home:
+      blog_banner_name: Blog
       blog_banner_title: This is the blog banner
+      event_banner_name: Events
       event_banner_title: This is the event banner
+      press_banner_name: Press
       press_banner_title: This is the press banner
+      video_banner_name: Introduction
       video_banner_title: This is the video banner
+      wip_banner_name: In progress
       wip_banner_title: This is the WIP banner
     landing:
       visit_gallery_btn: Check the exposition
-  buttons:
-    expositions: Expositions
-    home: home
-    gallery: Gallery
-    back: Back
-    edit: Edit
-    see_details: Check the artwork
-

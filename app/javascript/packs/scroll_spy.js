@@ -1,4 +1,4 @@
-window.addEventListener('DOMContenLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

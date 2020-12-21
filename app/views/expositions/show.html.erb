@@ -3,7 +3,11 @@
     <div class="under-nav"></div>
     <% @expo.artworks.each_with_index do |aw, i| %>
       <div class="carousel-item <%= 'active' if i == 0 %>">
-        <%= cl_image_tag aw.photo.key %>
+        <% if aw.photo.present? %>
+          <%= cl_image_tag aw.photo.key %>
+        <% else %>
+          <%= cl_image_tag 'https://res.cloudinary.com/dbgvvj1l3/image/upload/v1608543931/klaudia-piaskowska-g55bG1O5Lf0-unsplash_j8vl8m.jpg' %>
+        <% end %>
         <div class="carousel-caption">
           <div class="carousel-caption-content">
             <h4><%= aw.name %></h4>

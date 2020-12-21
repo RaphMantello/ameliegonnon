@@ -9,19 +9,27 @@ fr:
     models:
       artwork: Oeuvre
       exposition: Exposition
+  buttons:
+    back: Retour
+    edit: Modifier
+    expositions: Expositions
+    gallery: Galerie
+    home: Accueil
+    see_details: Voir l'oeuvre
+  errors:
+    messages:
+      not_saved: Not saved
   pages:
     home:
+      blog_banner_name: Blog
       blog_banner_title: Cette bannière contient le blog
+      event_banner_name: Événements
       event_banner_title: Cette bannière contient les événements
+      press_banner_name: Presse
       press_banner_title: Cette bannière contient les articles de presse
+      video_banner_name: Présentation
       video_banner_title: Cette bannière contient une vidéo
+      wip_banner_name: En cours
       wip_banner_title: Cette bannière contient les travaux en cours
     landing:
       visit_gallery_btn: Voir l'exposition
-  buttons:
-    expositions: Expositions
-    home: Accueil
-    gallery: Galerie
-    back: Retour
-    edit: Modifier
-    see_details: Voir l'oeuvre
