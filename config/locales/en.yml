@@ -33,3 +33,5 @@ en:
       wip_banner_title: This is the WIP banner
     landing:
       visit_gallery_btn: Check the exposition
+    gallery:
+      gallery_title: Photo gallery

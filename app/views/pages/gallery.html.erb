@@ -1,44 +1,7 @@
-<div class="gallery">
-  <div class="side-bar">
-    <div class="current-expo-title">
-      <div class="arrow-down"></div>
-      <%= link_to gallery_path, remote: true do %>
-        <h3 id="expo-title-content"><%= @expo.name %></h3>
-      <% end %>
-      <div class="arrow-down"></div>
-    </div>
-    <div class="expo-titles">
-      <% @expos.each do |expo| %>
-        <a href="" data-remote="true" class="expo-title"><%= expo.name %></a>
-      <% end %>
-    </div>
+<div class="container">
+  <div class="under-nav"></div>
+  <div class="title mt-5">
+    <h2><%= t('.gallery_title') %></h2>
   </div>
-  <div class="gallery-content">
-    <div class="under-nav"></div>
-    <div class="container">
-      <div id="last-expo">
-        <div class="expo-head">
-          <h2><%= @expo.name %></h2>
-          <p><%= @expo.description %></p>
-        </div>
-        <% @expo.artworks.each do |aw| %>
-          <%= render 'artworks/artwork_banner', aw: aw %>
-        <% end %>
-      </div>
-      <% @expos.each do |expo| %>
-        <div id="<%= expo.name %>" class="expo-content">
-          <div class="expo-head">
-            <h2><%= expo.name %></h2>
-            <p><%= expo.description %></p>
-          </div>
-          <% expo.artworks.each do |aw| %>
-            <%= render 'artworks/artwork_banner', aw: aw %>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-  </div>
+  <%= render 'artworks/artwork_cp_gallery', component_photos: @comp_photos %>
 </div>
-
-<%= javascript_pack_tag 'sidebar_expand' %>
-<%= javascript_pack_tag 'current_expo_show' %>

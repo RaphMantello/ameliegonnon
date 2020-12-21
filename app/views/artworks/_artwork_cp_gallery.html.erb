@@ -1,5 +1,7 @@
-<% component_photos.each do |cp| %>
-  <% cp.photos.each do |photo| %>
-    <%= cl_image_tag photo.key %>
+<div class="comp_photos-gallery">
+  <% component_photos.each do |cp| %>
+    <% cp.photos.each do |photo| %>
+      <%= cl_image_tag photo.key %>
+    <% end %>
   <% end %>
-<% end %>
+</div>

@@ -19,9 +19,9 @@
   <div class="aw-show-description">
     <p><%= @artwork.description %></p>
   </div>
-  <div class="comp_photos-gallery">
-    <%= render 'artworks/artwork_cp_gallery', component_photos: @artwork.component_photos %>
-  </div>
+
+  <%= render 'artworks/artwork_cp_gallery', component_photos: @artwork.component_photos %>
+
   <div id="awShowBackBtnWapper">
     <div id="awShowBackBtn">
       <%= link_to t('buttons.back'), exposition_path(@artwork.exposition) %>

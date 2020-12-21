@@ -33,3 +33,5 @@ fr:
       wip_banner_title: Cette bannière contient les travaux en cours
     landing:
       visit_gallery_btn: Voir l'exposition
+    gallery:
+      gallery_title: Galerie photo
