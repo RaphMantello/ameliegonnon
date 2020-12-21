@@ -1,15 +1,31 @@
-.aw-photo-banner img {
-  width: 100%;
-  max-height: 50vh;
-  object-fit: cover;
+.video-banner-background {
+  background-image: url('https://source.unsplash.com/5MTf9XyVVgM/1600x900');
+  height: 50vh;
+  background-size: cover;
+  background-position-y: center;
 }
 
-#video-banner {
-  height: 65vh;
+.video-banner-title {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
 
-  video {
-    object-fit: cover;
+  h1 {
+    position: relative;
+    top: 15%;
+    right: 5%;
+    color: white;
+    font-size: clamp(5rem, 9vw, 10rem);
+    font-family: 'Teko', sans-serif;
   }
+}
+
+.video-banner-description p {
+  margin: 3rem 0 5rem;
 }
 
 #press-banner {

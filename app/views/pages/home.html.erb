@@ -3,10 +3,14 @@
     <div class="under-nav"></div>
     <div class="title">
       <section id="video-banner">
-        <%= cl_video_tag('https://res.cloudinary.com/dbgvvj1l3/video/upload/v1608042431/smoke_light_mzwpuh.mp4',
-            autoplay: true, loop: true, muted: 'muted',
-            poster: false, controls: false,
-            width: '100%', height: '100%', crop: :cover) %>
+        <div class="video-banner-background">
+          <div class="video-banner-title">
+            <h1>Collectif artistique</h1>
+          </div>
+        </div>
+        <div class="video-banner-description container">
+          <p><%= t('.project_description_html') %></p>
+        </div>
       </section>
       <section id="press-banner">
         <h3><%= t('.press_banner_title') %></h3>
