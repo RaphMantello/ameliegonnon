@@ -1,7 +1,9 @@
 <div class="comp_photos-gallery">
   <% component_photos.each do |cp| %>
     <% cp.photos.each do |photo| %>
-      <%= cl_image_tag photo.key %>
+      <%= link_to artwork_path(cp.artwork) do %>
+        <%= cl_image_tag photo.key %>
+      <% end %>
     <% end %>
   <% end %>
 </div>
