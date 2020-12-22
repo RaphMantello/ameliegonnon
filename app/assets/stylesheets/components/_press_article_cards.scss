@@ -1,25 +1,22 @@
-.article-cards {
-  width: 100%;
-  top: 60px;
-  left: calc(50% - 300px);
+.article-cards-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3rem;
 }
 
 .article-card {
   display: flex;
-  flex-direction: column;
-  height: 35vh;
-  width: 25vh;
-  box-shadow: -1rem 0 3rem white;
+  height: 25rem;
+  width: 17rem;
+  padding: 0.75rem 1.25rem;
+  background-color: black;
+  box-shadow: -1rem 0 3rem #ffffff;
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
-  padding: 1rem 1.25rem;
   overflow: hidden;
-  background-color: #17141d;
-  color: white;
 }
 
 .article-card:not(:first-child) {
@@ -35,4 +32,17 @@
   position: relative;
   left: 50px;
   transition: 0.4s ease-out;
+}
+
+.article-card .title {
+  color: white;
+  font-weight: 300;
+  text-align: start;
+}
+
+.article-card p {
+  color: white;
+  font-size: small;
+  text-overflow: ellipsis;
+  margin: 1rem 0;
 }

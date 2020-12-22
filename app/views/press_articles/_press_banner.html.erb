@@ -1,19 +1,17 @@
-<div class="container">
-  <div class="title">
-    <h2><%= t('.press_banner_title') %></h2>
-  </div>
-  <div class="article-cards">
-    <% @articles.each do |article| %>
-      <%= link_to article.article_url do %>
-        <div class="article-card">
-          <div class="ac-title">
-            <p><strong><%= article.title %></strong></p>
-          </div>
-          <div class="ac-content">
-            <p><%= article.content %></p>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
+<div class="title">
+  <h2><%= t('pages.home.press_banner_title') %></h2>
 </div>
+<div class="article-cards-container">
+  <% @articles.each do |article| %>
+    <div class="article-card">
+      <%= link_to article.article_url do %>
+        <h3 class="title"><%= article.title %></h3>
+        <div class="article-h-line"></div>
+        <p class="content"><%= article.content %></p>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+
+
