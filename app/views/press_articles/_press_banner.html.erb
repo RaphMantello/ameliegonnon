@@ -4,7 +4,7 @@
 <div class="article-cards-container">
   <% @articles.each do |article| %>
     <div class="article-card">
-      <%= link_to article.article_url do %>
+      <%= link_to article.article_url, target: :_blank do %>
         <h3 class="title"><%= article.title %></h3>
         <div class="article-h-line"></div>
         <p class="content"><%= article.content %></p>

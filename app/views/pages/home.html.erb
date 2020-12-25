@@ -15,24 +15,34 @@
       <section id="press-banner" class="banner">
         <%= render 'press_articles/press_banner', articles: @articles %>
       </section>
-      <section id="wip-banner">
+<!--       <section id="wip-banner">
         <h2><%= t('.wip_banner_title') %></h2>
       </section>
       <section id="event-banner">
         <h2><%= t('.event_banner_title') %></h2>
-      </section>
-      <section id="blog-banner">
-        <h2><%= t('.blog_banner_title') %></h2>
+      </section> -->
+      <section id="contact-banner">
+        <h2><%= t('.contact_banner_title') %></h2>
+        <div class="contact-banner-content">
+          <div class="left-side">
+            <p><%= t('.contact_description') %></p>
+          </div>
+          <div class="contact-v-line"></div>
+          <div class="right-side">
+            <p><%= t('.contact_phone') %></p>
+            <p><%= t('.contact_email') %></p>
+          </div>
+        </div>
       </section>
     </div>
   </div>
   <div class="side-bar">
     <ul>
-      <li><a href="#video-banner" data-remote="true" class=""><%= t('.video_banner_name') %></a></li>
-      <li><a href="#press-banner" data-remote="true" class=""><%= t('.press_banner_name') %></a></li>
-      <li><a href="#wip-banner" data-remote="true" class=""><%= t('.wip_banner_name') %></a></li>
-      <li><a href="#event-banner" data-remote="true" class=""><%= t('.event_banner_name') %></a></li>
-      <li><a href="#blog-banner" data-remote="true" class=""><%= t('.blog_banner_name') %></a></li>
+      <li><a href="#video-banner" data-remote="true" class="active"><%= t('.video_banner_name') %></a></li>
+      <li><a href="#press-banner" data-remote="true" class="active"><%= t('.press_banner_name') %></a></li>
+<!--       <li><a href="#wip-banner" data-remote="true" class=""><%= t('.wip_banner_name') %></a></li>
+      <li><a href="#event-banner" data-remote="true" class=""><%= t('.event_banner_name') %></a></li> -->
+      <li><a href="#contact-banner" data-remote="true" class=""><%= t('.contact_banner_name') %></a></li>
     </ul>
   </div>
 </div>

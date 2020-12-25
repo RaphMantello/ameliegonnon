@@ -44,6 +44,19 @@
   height: 125vh;
 }
 
-#blog-banner {
-  height: 125vh;
+#contact-banner {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.contact-banner-content {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+
+  .left-side, .right-side {
+    width: 50%;
+    padding: 1rem 3rem;
+  }
 }

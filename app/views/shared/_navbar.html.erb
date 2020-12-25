@@ -6,8 +6,9 @@
   </div>
   <div class="nav-btns">
     <%= link_to t('buttons.expositions'), root_path, class: "my-btn cta-btn white-cta" %>
-    <%= link_to t('buttons.home'), home_path, class: "my-btn white-transp-btn" %>
+    <%= link_to t('buttons.home'), home_path, id: "homeBtn", class: "my-btn white-transp-btn" %>
     <%= link_to t('buttons.gallery'), gallery_path, class: "my-btn white-transp-btn" %>
   </div>
 </div>
 
+<%= javascript_pack_tag 'scroll_spy' %>

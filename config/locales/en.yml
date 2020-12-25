@@ -21,8 +21,11 @@ en:
       not_saved: Not saved
   pages:
     home:
-      blog_banner_name: Blog
-      blog_banner_title: This is the blog banner
+      contact_banner_name: Contact
+      contact_banner_title: Contact us!
+      contact_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet erat sodales, molestie metus nec, tincidunt mi.
+      contact_phone: '+33 6 23 29 18 29'
+      contact_email: collectif_artistique@gmail.com
       event_banner_name: Events
       event_banner_title: This is the event banner
       press_banner_name: Press
