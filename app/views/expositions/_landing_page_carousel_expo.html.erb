@@ -2,7 +2,9 @@
   <div class="carousel-left-side">
     <div class="carousel-left-side-photo-title">
       <div class="carousel-left-side-photo">
-        <%= cl_image_tag @expos.first.photos[0].key %>
+        <% if @expos.first.photos.present? %>
+          <%= cl_image_tag @expos.first.photos[0].key %>
+        <% end %>
       </div>
       <div class="carousel-left-side-title">
         <h1><%= @expos.first.name %></h1>
